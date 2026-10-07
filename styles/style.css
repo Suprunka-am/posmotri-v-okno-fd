@@ -11,15 +11,12 @@ html {
 .page {
   inline-size: 1200px;
   block-size: 100%;
-  width: 100%;
   margin: auto;
-  max-width: 1140px; /* ограничение ширины */
-  margin: 133px 30px; /* отступы сверху/снизу и слева/справа */
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  justify-content: center; /* центрируем контент по горизонтали */
+  justify-content: center; /* центрируем контент по горизонтали*/
   align-items: center;
   display: flex;
 }
