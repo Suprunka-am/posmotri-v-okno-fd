@@ -17,6 +17,8 @@ html {
   background-color: #fff; /* фон страницы, чтобы было видно отступы */
 }
 .page {
+  inline-size: 1200px;
+  block-size: 100%;
   width: 100%;
   max-width: 1140px; /* ограничение ширины */
   margin: 133px 30px; /* отступы сверху/снизу и слева/справа */
