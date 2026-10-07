@@ -8,24 +8,20 @@ html {
   block-size: 100%;
 }
 
-.body {
-  margin: 0;
-  min-height: 100vh; /* страница всегда минимум на весь экран */
-  display: flex;
-  justify-content: center; /* центрируем контент по горизонтали */
-  align-items: center;
-  background-color: #fff; /* фон страницы, чтобы было видно отступы */
-}
 .page {
   inline-size: 1200px;
   block-size: 100%;
   width: 100%;
+  margin: auto;
   max-width: 1140px; /* ограничение ширины */
   margin: 133px 30px; /* отступы сверху/снизу и слева/справа */
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center; /* центрируем контент по горизонтали */
+  align-items: center;
+  display: flex;
 }
 
 h1,
