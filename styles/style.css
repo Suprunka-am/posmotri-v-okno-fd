@@ -52,15 +52,17 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #d9d9d9;
 }
+
 /*Общие настройки блока с видео*/
 .content {
   display: flex;
   position: relative;
+  margin-right: 30px;
   flex-direction: row; /*Расположили эл-ты в строку*/
-  align-content: end; /*Прижали элементы контейнера к низу по верт оси */
   width: 1140px;
-  gap: 30px; /*Отсутуп между элементами*/
+  gap: 30px; /*Отсутуп между элементами. В макете задан именно такой отступ*/
 }
+
 /*Блок с видео*/
 .result {
   padding-top: 78px;
@@ -86,6 +88,8 @@ ol {
 .search-form {
   display: flex;
   gap: 40px;
+  max-width: 711px;
+  max-height: 54px;
   align-items: start;
   position: relative;
   font-size: 18px;
@@ -115,10 +119,13 @@ ol {
   align-items: center;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
+
 .search-form__label-text {
   cursor: pointer;
 }
+
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
@@ -129,7 +136,7 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .search-form__fieldset {
@@ -138,16 +145,23 @@ ol {
 
 .search-form__textfield {
   background-color: transparent;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   font-weight: 400;
   color: #fff;
   border-top: 1px solid #fff; /* Рамка только сверху */
   border-bottom: 1px solid #fff; /* Рамка только снизу */
+  border-left: none;
+  border-right: none;
   appearance: none;
+  width: 225px;
 }
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
+  font-family: "Fira Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .search-form__textfield:focus {
@@ -178,6 +192,7 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
+
 /*Правый блок со скроллом*/
 .content__details {
   width: 100%;
@@ -190,7 +205,7 @@ ol {
   font-size: 75px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 94%;
+  line-height: 0.94;
 }
 
 .content__accent {
@@ -225,22 +240,28 @@ ol {
   padding-left: 3px;
   padding-right: 3px;
 }
+
 /*Стилизация карточек*/
-/*.content__card-link_current {
-  В задании нужно задать цвет фона, но в макете цвета не задано
-}*/
+.content__card-link_current {
+  background-color: #545050;
+}
+
 .content__card-link:active {
   background-color: #545050;
 }
+
 .content__card-link:hover {
   text-decoration: underline;
 }
+
 .content__card-link:focus {
   outline: none;
 }
+
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
+
 .content__video-card-title {
   font-size: 30px;
   font-weight: 700;
@@ -284,31 +305,36 @@ ol {
   border: 1px solid #fff;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
-  font-style: bold;
   font-weight: 700;
   font-size: 18px;
   background-color: transparent;
   cursor: pointer;
 }
+
 .search-form__submit-button {
   height: 34px;
   width: 194px;
   align-self: self-end;
-  margin-left: 6px;
 }
+
 .more-button {
-  width: 100%;
+  width: 390px;
   height: 34px;
+  padding-top: 40px;
 }
+
 .button:hover {
   text-decoration: underline;
 }
+
 .button:active {
   background-color: #545050;
 }
+
 .button:focus {
   outline: none;
 }
+
 .button:focus-visible {
   outline: 1px solid #fff;
 }
